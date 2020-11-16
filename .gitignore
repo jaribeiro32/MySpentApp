@@ -33,8 +33,6 @@ yarn-error.log
 ### Laravel ###
 /vendor/
 node_modules/
-npm-debug.log
-yarn-error.log
 
 # Laravel 4 specific
 bootstrap/compiled.php
@@ -49,11 +47,8 @@ public_html/storage
 public_html/hot
 
 storage/*.key
-.env
-Homestead.yaml
-Homestead.json
+
 /.vagrant
-.phpunit.result.cache
 
 # Laravel IDE helper
 *.meta.*
@@ -202,3 +197,12 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/laravel,phpstorm,phpunit,windows,git
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd
+/.idea/laravel-plugin.xml
+/.idea/commandlinetools/Laravel_16_11_2020_13_13.xml
+/.idea/modules.xml
+/.idea/MySpentApp.iml
+/.idea/vcs.xml
+/.idea/php.xml
+/.idea/phpunit.xml
