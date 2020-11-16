@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Feature extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['plan_id', 'name', 'slug', 'type'];
+
+    public function plan()
+    {
+        return $this->belongsTo(Plan::class);
+    }
 }
