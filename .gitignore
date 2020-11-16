@@ -11,6 +11,8 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 
+*.sqlite
+*.sqlite-journal
 
 # Created by https://www.toptal.com/developers/gitignore/api/laravel,phpstorm,phpunit,windows,git
 # Edit at https://www.toptal.com/developers/gitignore?templates=laravel,phpstorm,phpunit,windows,git
