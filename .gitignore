@@ -208,3 +208,5 @@ $RECYCLE.BIN/
 /.idea/vcs.xml
 /.idea/php.xml
 /.idea/phpunit.xml
+/.idea/blade.xml
+/.idea/laravel-idea.xml
