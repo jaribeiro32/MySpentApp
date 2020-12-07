@@ -29,7 +29,8 @@
                 <td class="px-4 py-2 border">{{$expense->id}}</td>
                 <td class="px-4 py-2 border">{{$expense->description}}</td>
                 <td class="px-4 py-2 border">
-                    <span class="@if($expense->type == 1) text-green-700 @else text-red-500 @endif">R$ {{number_format($expense->amount, 2, ',', '.')}}</span>
+                    <span
+                        class="@if($expense->type == 1) text-green-700 @else text-red-500 @endif">R$ {{number_format($expense->amount, 2, ',', '.')}}</span>
                 </td>
                 <td class="px-4 py-2 border">{{$expense->created_at->format('d/m/Y H:i:s')}}</td>
                 <td class="px-4 py-4 border">
@@ -43,6 +44,8 @@
         </tbody>
     </table>
     <div class="w-full mx-auto mt-10">
-        {{$expenses->links()}}
+        @if(count($expenses))
+            {{$expenses->links()}}
+        @endif
     </div>
 </div>
