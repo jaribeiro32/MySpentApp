@@ -1,13 +1,14 @@
-<div class="py-4">
+<div>
+
 
     <x-slot name="header">
-        Criar registro
+        Editar registro
     </x-slot>
 
     @if(session()->has('message'))
         <h3>{{ session('message') }}</h3>
     @endif
-    <form action="" wire:submit.prevent="createExpense">
+    <form action="" wire:submit.prevent="updateExpense">
 
         <p>
             <label>Descrição</label>
