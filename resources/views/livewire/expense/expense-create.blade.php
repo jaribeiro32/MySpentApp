@@ -4,9 +4,8 @@
         Criar registro
     </x-slot>
 
-    @if(session()->has('message'))
-        <h3>{{ session('message') }}</h3>
-    @endif
+    @include('_includes.message')
+
     <form action="" wire:submit.prevent="createExpense">
 
         <p>

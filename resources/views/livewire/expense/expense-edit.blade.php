@@ -1,13 +1,11 @@
 <div>
 
-
     <x-slot name="header">
         Editar registro
     </x-slot>
 
-    @if(session()->has('message'))
-        <h3>{{ session('message') }}</h3>
-    @endif
+    @include('_includes.message')
+
     <form action="" wire:submit.prevent="updateExpense">
 
         <p>
