@@ -9,7 +9,9 @@ class Expense extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id', 'description', 'type', 'amount'];
+    protected $fillable = ['user_id', 'description', 'type', 'amount', 'photo', 'expenses_date'];
+
+    protected $dates = ['expenses_date'];
 
     public function getAmountAttribute()
     {
@@ -18,7 +20,7 @@ class Expense extends Model
 
     public function setAmountAttribute($prop)
     {
-        return $this->attributes['amount']  = $prop * 100;
+        return $this->attributes['amount'] = $prop * 100;
     }
 
     public function user()
